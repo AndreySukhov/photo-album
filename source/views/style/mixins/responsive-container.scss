@@ -1,0 +1,15 @@
+@mixin container {
+  min-width: 320px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: auto;
+  }
+}

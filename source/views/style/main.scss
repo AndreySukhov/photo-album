@@ -1,0 +1,17 @@
+// setups
+@import "mixins/clearfix";
+@import "mixins/responsive-container";
+@import "mixins/responsive-styles";
+@import "misc/fonts";
+@import "misc/var";
+@import "misc/common";
+
+// blocks
+@import "blocks/footer";
+
+// pages
+@import "pages/index";
+@import "pages/album";
+@import "pages/main-page";
+@import "pages/profile";
+@import "pages/search";
