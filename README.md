@@ -3,12 +3,12 @@
 Второй выпускной проект. Разработка онлайн сервиса для загрузки, хранения, обсуждения фотографий.
 
 ##Разработчики
-* Александр Собакарь (Xaosaki)[https://github.com/Xaosaki] - наставник
-* Елена Валеева (Nikkie8)[https://github.com/Nikkie8] - тимлид, js
-* Андрей Сухов (AndreySukhov)[https://github.com/AndreySukhov] - верстка
-* Олег Унгер (OlekUnger)[https://github.com/OlekUnger] - верстка
-* Тишук Надежда (rainjeck)[https://github.com/rainjeck] - js
-* Игорь Соловьёв (iasoloviev61)[https://github.com/iasoloviev61] - php/node.js
+* Александр Собакарь [Xaosaki](https://github.com/Xaosaki) - наставник
+* Елена Валеева [Nikkie8](https://github.com/Nikkie8) - тимлид, js
+* Андрей Сухов [AndreySukhov](https://github.com/AndreySukhov) - верстка
+* Олег Унгер [OlekUnger](https://github.com/OlekUnger) - верстка
+* Тишук Надежда [rainjeck](https://github.com/rainjeck) - js
+* Игорь Соловьёв [iasoloviev61](https://github.com/iasoloviev61) - php/node.js
 
 ##Технологии
 * Gulp 4.0
