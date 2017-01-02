@@ -1,0 +1,118 @@
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 7.5rem;
+    background-repeat: no-repeat;
+    &::before {
+        @include size(100%);
+        @include pseudo;
+        background-color: rgba(0,0,0, 0.8);
+        top: 0;
+        left: 0;
+    }
+
+    &__container {
+        max-width: 1200px;
+        padding: 1.5rem 1rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        @include phones {
+            padding: 15px 2.5rem 15px;
+            flex-direction: row;
+            align-items: start;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 2.5rem;
+        @include phones {
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        text-align: center;
+        font: 1.4rem/2.1rem $proximalight;
+        color: #fff;
+        @include phones {
+            width: 40%;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+
+        &:nth-of-type(1) {
+            @include phones {
+            text-align: left;
+            order: 1;
+            }
+        }
+
+        &:nth-of-type(2) {
+            color: rgba(255,255,255,.4);
+            @include phones {
+                text-align: right;
+                order: 3;
+            }
+        }
+    }
+}
+
+.scroll-btn {
+    @include size(26px 21px);
+    display: block;
+    margin-top: 5px;
+    &:hover {
+        .scroll-icon {
+            fill: #fff
+        }
+    }
+    .scroll-icon {
+        @include size(100%);
+        fill: rgba(255,255,255,.8);
+        transition: all ease-in-out .1s;
+    }
+
+    @include phones {
+        order: 2;
+    }
+}
+
+// todo фоны меняются в зависимости от страницы, поменять, когда будем делать страницы
+
+// album background
+.footer {
+    background-image: url('../img/bg/album-bg-2000.jpg');
+    background-position: center center;
+}
+
+.footer--main-page {
+    background-image: url('../img/bg/main-bg-1000.jpg');
+    background-position: 80% center;
+    @include phones {
+        background-image: url('../img/bg/main-bg-2000.jpg');
+    }
+}
+
+.footer--profile-page{
+    background-image: url('../img/bg/user-bg-2000.jpg');
+    background-position: center center;
+}
+
+.footer--search-page {
+    background-image: url('../img/bg/main-bg-1000.jpg');
+    background-position: 80% center;
+    @include phones {
+        background-image: none;
+        background-color: #232323;
+        &::before {
+            display: none;
+        }
+    }
+}
